@@ -9,7 +9,7 @@
                     <h1 class="display-4 mb-4">Cart items</h1>
                 </div>
                 <div class="col-md">
-                    <a href="#"><button class="btn btn-lg btn-success float-end" style="padding: 10px 50px">Checkout</button></a>
+                    <a href="#"><button class="btn btn-lg btn-dark float-end" style="padding: 10px 50px">Checkout</button></a>
                 </div>
             </div>
             <div class="row">
@@ -26,8 +26,9 @@
                                     </div>
                                     <div class="col-md">
                                         <div class="btn-group float-end" role="group">
-                                            <a href={{route('cart.increase', $item->id)}}><button type="button" class="btn btn-sm btn-success">+</button></a>
-                                            <a href={{route('cart.decrease', $item->id)}}><button type="button" class="btn btn-sm btn-danger">-</button></a>
+                                            <a href={{route('cart.increase', $item->id)}}><button type="button" class="btn btn-sm btn-dark" style="border-top-right-radius: 0; border-bottom-right-radius: 0">+</button></a>
+                                            &nbsp;
+                                            <a href={{route('cart.decrease', $item->id)}}><button type="button" class="btn btn-sm btn-dark" style="border-top-left-radius: 0; border-bottom-left-radius: 0">-</button></a>
                                         </div>
                                     </div>
                                 </div>
